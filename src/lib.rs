@@ -1,4 +1,7 @@
 use std::io::{Read, Result, Write};
+pub mod tcp;
+
+// TODO: BufWriter for encoder, flush on each message?
 
 /// Write a packet containing up to 4 Gibibytes
 /// (2^32 bytes) of data, preceded by a 4 byte length header
