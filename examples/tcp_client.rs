@@ -1,6 +1,5 @@
-use std::{sync::mpsc::channel, thread};
-
 use length_delimit::tcp::client;
+use std::{sync::mpsc::channel, thread};
 
 fn main() {
     let addr = std::env::args()

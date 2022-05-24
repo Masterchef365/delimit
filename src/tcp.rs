@@ -51,7 +51,7 @@ pub fn server(addr: SocketAddr, rx: Receiver<Vec<u8>>) -> Result<()> {
         }
     });
 
-    // Listener loop, listens for clients and creates guests 
+    // Listener loop, listens for clients and creates guests
     loop {
         if let Ok((stream, _)) = listener.accept() {
             let (tx, rx) = channel();
